@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,fit-to-shrink=0;">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+ *{
+        box-sizing: border-box;
+        
+        
+    }
+    img{
+        max-width: 100%;
+        
+    }
+   
+    .menu ul{
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-left: 0rem;
+        
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu ul .image{
+        flex: 1;
+        margin: -16px;
+    }
+   
+    #section{
+        background-image: url("images/bckimg.jpg");
+        background-attachment: fixed;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 50px;
+    
+    
+
+    }
+
+    .menu ul li{
+        padding-left: 20px;
+        
+    }
+    .menu ul li a:hover{
+        background-color:rgba(243, 243, 234, 0.466);
+    }
+    .heading{
+        
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+        
+    }
+    
+    .btns ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+   
+    .btns .bn:hover{
+        background-color: yellow;
+    
+    }
+    .btns ul li a{
+        text-decoration: none;  
+        color: black;
+    }
+   
+    .btns button{
+        background-color: rgba(231, 233, 231, 0.452);
+        padding: 10px;
+        width: 200px;
+        
+    }
+   
+    .container h2{
+        text-align: center;
+    }
+   
+    #section1{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .range,.captions{
+display: grid;
+grid-template-columns: 33.3333333% 33.3333333% 33.33333333%;
+column-gap: 5px;
+padding-top: 30px;
+    }
+    
+
+    .red,.yellow,.purple{
+        display: flex;
+        
+        
+       
+
+    }
+    .typo{
+        width: 60%;
+        background-color: red;
+        text-align: center;
+        border: 1px solid red;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 20px;
+
+    }
+    .design{
+        background-color: yellow;
+        text-align: center;
+        width: 82%;
+        border: 1px solid yellow;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 20px;
+        
+    }
+   .rem1,.rem2,.rem3{
+       background-color: gray;
+    
+       border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        height: 20px;
+
+   
+   }
+
+   .rem1{
+       width: 40%;
+   }
+.rem2{
+    width: 18%;
+}
+.rem3{
+    width: 14%;
+}
+   .dvpmnt 
+   {
+    background-color: rgb(218, 132, 218);
+        text-align: center;
+        width: 86%;
+        border: 1px solid purple;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 20px;  
+   }
+   .rt{
+color: red;
+   }
+   .yd{
+       color: yellow;
+   }
+   .pd{
+       color: purple;
+   }
+   .pd h6 span::after{
+       content: "<";
+   }
+   .fa-square
+   {
+color: yellow;
+   }
+  
+   #section2{
+       text-align: center;
+       background-color: rgba(236, 232, 232, 0.856);
+       padding-top: 25px;
+       padding-bottom: 25px;
+       font-weight: bold;
+   }
+   #section2 p{
+       font-weight: lighter;
+   }
+   .column{
+       
+       width:25%;
+   }
+.row1{
+    display: flex;
+   flex-wrap: wrap;
+
+}
+
+#section3{
+
+background-image: url("images/purple.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+#section3
+{
+    padding: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#section3 h4{
+    color: white;
+    font-weight: bold;
+
+
+    
+}
+#section3 p{
+    text-align: center;
+    line-height: 30px;
+
+}
+#sec1{
+    background-color: rgb(202, 137, 202);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#sect2{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.webdesign,.webdevelopment,.seoanalysis{
+    width: 33.333333333%;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+.webdesign h3{
+    color: red;
+}
+.webdevelopment h3{
+    color:yellow;
+}
+.seoanalysis h3{
+    color: purple;
+}
+#section4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.webdevelopment h4::before{
+    content: "<";
+}
+.webdevelopment h4{
+    color: yellow;
+    text-align: center;
+}
+#section5{
+    background-color:rgba(39, 37, 37, 0.781);
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+#section5 h4{
+    font-weight: bolder;
+}
+#section5 p{
+    color: white;
+}
+#section5 .button
+{
+    background-color: yellow;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    font-weight: bolder;
+}
+#ss{
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    color: rgb(252, 252, 2);
+    font-weight: bolder;
+}
+.card2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.card{
+    padding-top: 10px;
+}
+#section6{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("images/ylw.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.ftn,.svn,.frtn{
+    width: 33.3333333%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    color: white;
+    font-weight: bolder;
+    
+}
+.line{
+    border-right: 2px solid white;
+    height: 95%;
+}
+#sec7{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pp1,.pp2,.pp3{
+    width: 33.3333333%;
+}
+.pp1,.pp2,.pp3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p1,.p2,.p3,.bio{
+    width: 50%;
+}
+.bio{
+    padding-top: 60px;
+}
+.po1{
+   border-radius: 50%;
+   width: 200px;
+   
+}
+
+ .p11{
+    text-align: center;
+    padding-top: 50px;
+}
+#section7{
+    padding-top: 25px;
+    padding-bottom:25px;
+    background-color: rgb(187, 184, 184);
+}
+#section7 h2{
+    text-align: center;
+    font-weight: bolder;
+    color:black;
+
+}
+#fa1,#fa2,#fa3,#fa4{
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+
+}
+#fa1{
+    border:1px solid red;
+}
+#fa2{
+    border: 1px solid yellow;
+}
+#fa3{
+    border:1px solid purple;
+}
+#fa4{
+    border: 1px solid black;
+}
+#fa1,#fa2,#fa3:hover {
+    opacity: 0.7;
+}
+
+ .fa-facebook {
+  
+  color:red;
+}
+ .fa-twitter {
+  
+  color:red;
+}
+ .fa-linkedin {
+  
+  color: rgb(221, 44, 44);
+}
+#section8{
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color:rgb(240, 234, 234);
+}
+#sec8{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+
+
+.address,.cust{
+    width: 33.3333333%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.links{
+    width: 33.33333333%;
+    
+    
+}
+.loc,.detail{
+    border-left: 1px solid black;
+    
+}
+.ad,.loc,.ct,.detail{
+width: 50%;
+}
+.detail,.loc{
+    padding-left: 10px;
+}
+.fname{
+    display: flex;
+    flex-wrap: wrap;
+}
+.name,.email,.Subject{
+    width: 33.333333333%;
+}
+.name,.email{
+    padding-right: 20px;
+}
+textarea{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+.b button{
+    width: 10%;
+}
+#sec10{
+    display: flex;
+    flex-wrap: wrap;
+}
+.supp,.info,.pro{
+    width: 33.333333%;
+    line-height: 30px;
+}
+footer{
+    background-color: black;
+    color: rgb(177, 174, 174);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+@media only screen and (max-width:1400px)
+    {
+        .pp1,.pp2{
+            width: 50%;
+        }
+        .pp3{
+            width: 100%;
+        }
+        .p3{
+            text-align: right;
+        }
+        .pp3 .bio{
+            padding-left: 50px;
+        }
+        .pp3 .p11
+        {
+         text-align: right;
+        }
+}
+@media only screen and (max-width:992px)
+{
+    .column{
+        width: 50%;
+    }
+    .webdesign,.webdevelopment,.seoanalysis{
+       width: 100%;
+    }
+    #ss{
+        flex-direction: column;
+    }
+    .con1{
+        margin-bottom: 10px;
+    }
+    #sec7{
+    flex-direction: column;
+}
+.pp1,.pp2,.pp3{
+    flex-direction: column;
+    width: 100%;
+    
+}
+.p1, .p2, .p3, .bio{
+    width: 100%;
+
+}
+.bio{
+    padding-top: 20px;
+}
+.p11{
+    text-align:center ;
+    margin-bottom: -16px;
+}
+.pp3 .bio{
+    padding-left: 0px;
+}
+.h11{
+    text-align:center ;   
+}
+.address,.cust{
+    width: 50%;
+}
+.links{
+    width: 100%;
+}
+.pp3 .p11{
+    text-align: center;
+}
+}
+@media only screen and (max-width:767px)
+{
+.menu ul{
+    flex-direction: column;
+    width: 100%;
+}
+.menu ul .m{
+    text-align: center;
+    border: 2px solid rgba(214, 210, 210, 0.76);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius:10%;
+}
+.menu ul li p{
+    text-align: center;
+}
+.menu #m1{
+    border-top: 2px solid grey;
+}
+.menu #m2{
+    border-bottom: 2px solid gray;
+} 
+.menu p{
+    text-align: center;   
+}
+.btns ul{
+    flex-direction: column;
+    padding-left: 0px;
+} 
+.btns ul li{
+    margin-bottom: -16px;
+}
+.btns button{
+    width: 80%;
+} 
+.range{
+    display: block;
+}
+.red,.yellow,.purple{
+    margin-bottom: 15px;
+}
+.captions{
+    display: block;
+}
+.rt,.yd,.pd{
+    margin-bottom: 10px;
+}
+#section{
+    padding-bottom: 5px;
+}
+
+.column{
+       
+       width:100%;
+   }
+   .webdesign,.webdevelopment,.seoanalysis{
+       width: 100%;
+       padding-top: 10px;
+    border-bottom: 1px solid #a39f9f;
+   }
+   .seoanalysis{
+       border-bottom: none;
+   }
+   #ss{
+       flex-direction: column;
+       padding: 0px;
+   }
+   .con1{
+       margin-bottom: 10px;
+   }
+   #section6{
+       flex-direction: column;
+
+   }
+.frtn,.svn,.ftn{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.line{
+    border-right: none;
+    border-bottom: 1px solid white;
+}
+#sec7{
+    flex-direction: column;
+}
+.pp1,.pp2,.pp3{
+    flex-direction: column;
+    width: 100%;
+    
+}
+.p1, .p2, .p3, .bio{
+    width: 100%;
+
+}
+.bio{
+    padding-top: 20px;
+}
+.p11{
+    text-align:center ;
+    margin-bottom: -16px;
+}
+.h11{
+    text-align:center ;   
+}
+#sec8{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+.address,.cust{
+    width: 100%;
+    order: 1;
+}
+.links{
+    order: 0;
+    width: 100%;
+}
+.fname{
+    flex-direction: column;
+}
+.name,.email,.Subject{
+    width: 100%;
+}
+.name,.email{
+    padding-right: 0px;
+}
+.b button{
+    width: fit-content;
+}
+#sec10{
+    flex-direction: column;
+}
+.supp,.info,.pro{
+    width: 100%;
+    margin-bottom: 10px;
+}
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="container-fluid" id="section">
+    
+        <div class="container">
+        
+        <div class="menu">
+            
+            <ul style="list-style: none;">
+            
+              <li class="image"><p><img src="images/newlogo.png" alt="img"></p><li>
+                <li class="m" id="m1"><a href="#section1">About</a></li>
+                <li class="m"><a href="#section2">Portfolio</a></li>
+                <li class="m"><a href="#section3">Testimonials</a></li>
+                <li class="m"><a href="#section4">Services</a></li>
+                <li class="m"><a href="#section5">Blog</a></li>
+                <li class="m"><a href="#section7">Our Team</a></li>
+                <li class="m" id="m2"><a href="#section8">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div  class="heading">
+            
+    <h1>CLEAN <span><i class="fa fa-square" aria-hidden="true"></i>
+    </span>SLICK <span><i class="fa fa-square" aria-hidden="true"></i></span> PIXEL PERFECT</h1>
+    <p style="color: rgb(24, 23, 23);">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+  <div class="btns">
+      <ul style="list-style: none;">
+
+<li><button type="button" class="bn">
+        <a href="#"> Learn more</a>
+      </button></li>&emsp;
+     <li>
+          <button type="button"  class="bn">
+            <a href="#">Download</a> 
+          </button></li>
+          </ul>
+          </div>
+      
+
+  </div>
+  </div>
+</div>
+        </div>
+    </div>
+    <div  class="container" id="section1">
+        <h2>ABOUT</h2>
+       <p style="text-align: center;"> Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+<div class="range">
+    <div class="red">
+        <div class="typo">
+           <h6>60%</h6>    
+              </div>
+              <div class="rem1">
+                  <p></p>
+              </div>
+            
+                    
+             
+              
+              
+    </div>
+    <div class="yellow">
+        <div class="design">
+           <h6>82%</h6>    
+              </div>
+              <div class="rem2">
+                  <p></p>
+              </div>
+    </div>
+    <div class="purple">
+        <div class="dvpmnt">
+           <h6>86%</h6>    
+              </div>
+              <div class="rem3">
+                  <p></p>
+              </div>
+    </div>
+</div>
+<div class="captions">
+    <div class="rt">
+        <h6>A Typography</h6>
+    </div>
+    <div class="yd">
+        <h6> B<span> <i class="fa fa-pencil" aria-hidden="true"></i></span> Design</h6>
+    </div>
+    <div< class="pd">
+        <h6><span>C </span> /> Development</h6>
+    </div>
+
+</div>
+    </div>
+    <div class="container-fluid" id="section2">
+        <h3>Projects</h3>
+        <p>You will love our work.Check it out!</p>
+        </div>
+        <div class="images">
+        <div class="row1">
+            <div class="column">
+            <img src="images/boosrapbgimg.jpg" alt="img">
+
+            </div>
+            <div class="column">
+                <img src="images/laptop800.jpg" alt="img">
+            </div>
+            <div class="column">
+                <img src="images/shutterstock_573033244-800-x-450px.jpg" alt="img">
+            
+            </div>
+            <div class="column">
+                <img src="images/keyboard.jpg" alt="img">
+               
+                </div>
+        </div>
+        
+    </div>
+    <div class="container-fluid" id="section3">
+           <h4 style="text-align: center;">Testimonials</h4>
+           <p><img src="images/sq2.jpg" class="po1" alt="abc"></p>
+           <div class="container" id="sec1">
+            <p>Awsome theme with great design and awesome.Looking to level up your design skills? Dribbble offers multiple ways for you to enrich and expand your design skills - from live workshops to comprehensive 12 week courses all with your favorite design leaders.</p>
+           </div>
+</div>
+               
+               
+               
+           </div>
+        </div>
+    </div>
+   
+<div class="container-fluid" id="section4">
+    <h2 style="text-align: center;">Services</h2>
+   <p style="text-align: center;">Inorder to help you grow you business,our carefully selected experts can advice you in the following areas:</p>
+    <div class="container" id="sect2">
+    <div class="webdesign">
+       <p style="text-align: center; color: red;"><i class="fa fa-pencil" aria-hidden="true"></i></p>
+        <h3 style="text-align: center;">Web Design</h3>
+        <p style="text-align: center;">Looking to level up your design skills? Dribbble offers multiple ways for you to enrich and expand your design skills - from live workshops to comprehensive 12 week courses all with your favorite design leaders.</p>
+    </div>
+    <div class="webdevelopment">
+        <h4>/></h4>
+        <h3 style="text-align: center;">Web Development</h3>
+        <p style="text-align: center;">Looking to level up your design skills? Dribbble offers multiple ways for you to enrich and expand your design skills - from live workshops to comprehensive 12 week courses all with your favorite design leaders.</p>
+        
+    
+    </div>
+    <div class="seoanalysis">
+       <p style="text-align: center;color: purple;"><i class="fa fa-search"></i></p>
+    
+           <h3 style="text-align: center;">SEO Analysis</h3>
+       <p style="text-align: center;">Looking to level up your design skills? Dribbble offers multiple ways for you to enrich and expand your design skills - from live workshops to comprehensive 12 week courses all with your favorite design leaders.</p>
+    </div>
+</div>
+</div>
+<div class="container-fluid" id="section5">
+    <h4 style="text-align: center; color: white;">Latest News</h4>
+    <p style="text-align: center;">If you are interested in the latest articles in the industry,take a sneak peak at our blog.You have nothing to loose!</p>
+<p style="text-align: center;"><button type="button" class="button">
+    <a href="#"><i class="fa fa-play" aria-hidden="true"> See Blog</i></a>
+    
+</button>
+</p>
+<div class="container" id="ss">
+    <div class="con1">
+        <img src="images/GB-Solutions-Blog-Image-800-x-450px-4.jpg" alt="image">
+        <div class="card" style="background-color: white;">
+        <h4 style="text-align: center;">We have made this Theme SEO Friendly</h4>
+        <p style="color: black;text-align: center;">Supercharge your website with better WordPress hosting and get expert help with debugging. We quickly take care of small urgent tasks that are out of scope for other web hosts. 24/7 Support. Try free. Free migration.</p>
+    <button type="button" style="background-color: white;" class="btn">
+        <i class="fa fa-play" aria-hidden="true"> Read More</i>
+        
+    </button>
+    </div>
+    </div>
+    <div class="con1">
+        <img src="images/sck.jpg" alt="image">
+        <div class="card2" style="background-color: white;">
+            <h4 style="text-align: center;">We have made this Theme SEO Friendly</h4>
+            <p style="color: black;text-align: center;">Supercharge your website with better WordPress hosting and get expert help with debugging. We quickly take care of small urgent tasks that are out of scope for other web hosts. 24/7 Support. Try free. Free migration.</p>
+            <p style="text-align: center;"><button type="button" style="background-color: white;" class="btn">
+                <i class="fa fa-play" aria-hidden="true"> Read More</i>
+                
+            </button></p>
+        </div>
+    </div>
+    <div class="con1">
+        <img src="images/Common_lime_during_an_autumn_sunset,_Christchurch,_New_Zealand.jpg" alt="image">
+        <div class="card" style="background-color: white;">
+            <h4 style="text-align: center;">We have made this Theme SEO Friendly</h4>
+            <p style="color: black;text-align: center;">Supercharge your website with better WordPress hosting and get expert help with debugging. We quickly take care of small urgent tasks that are out of scope for other web hosts. 24/7 Support. Try free. Free migration.</p>
+            <button type="button" style="background-color: white;" class="btn">
+                <i class="fa fa-play" aria-hidden="true"> Read More</i>
+                
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid" id="section6">
+    <div class="ftn">
+        <div class="line"> 
+        <h2>14</h2>
+        <p>PROJECTS</p>
+</div>
+    </div>
+    <div class="svn">
+        <div class="line">
+        <h2>7</h2>
+        <p>CLIENTS</p>
+        </div>
+    </div>
+    <div class="frtn">
+        <h2>14</h2>
+        <p>SERVICES</p>
+    </div>
+</div>
+    <div class="container-fluid" id="section7">
+        <h2>Team</h2>
+        <p style="text-align: center;">Meet the people that are going to take your business to the next level.</p>
+        <div class="container" id="sec7">
+            <div class="pp1">
+            <div class="p1">
+            <p class="p11"><img src="images/sq.jpg" class="po1"></p>
+            </div>
+            <div class="bio">
+                <h4 class="h11">Mark Lawrence</h4>
+              <p><span style="color: red;"> Web Designer</span><br><br>
+                Creative,detail-oriented, always focused<br></p>
+                <a href="#" class="fa fa-facebook" id="fa1"></a>
+                <a href="#" class="fa fa-twitter" id="fa1"></a>
+                <a href="#" class="fa fa-linkedin" id="fa1"></a>
+</div>
+            </div>
+            
+    <div class="pp2">
+        <div class="p2">
+        <p class="p11"><img src="images/sq2.jpg" class="po1"></p>
+</div>
+<div class="bio">
+    <h4 class="h11">Jane Stenton</h4>
+    <p><span style="color: yellow;"> SEO Specialist</span><br><br>
+    Curious,tech-greek,always focused<br></p>
+    <a href="#" class="fa fa-facebook" id="fa2" style="color: yellow;" ></a>
+    <a href="#" class="fa fa-twitter" id="fa2" style="color: yellow;"></a>
+    <a href="#" class="fa fa-linkedin" id="fa2" style="color: yellow;"></a>
+
+</div>
+    </div>
+    <div class="pp3">
+    <div class="p3">
+        <p class="p11"><img src="images/sq3.jpg" class="po1"></p>
+    </div>
+    <div class="bio">
+        <h4 class="h11">John Smith</h4>
+        <p><span style="color:purple;">Developer</span><br><br>
+        Enthusiasic,passionate with great sense of humour<br></p>
+        <a href="#" class="fa fa-facebook" id="fa3" style="color: purple;" ></a>
+        <a href="#" class="fa fa-twitter" id="fa3" style="color: purple;"></a>
+        <a href="#" class="fa fa-linkedin" id="fa3" style="color: purple;"></a>
+    </div>
+        </div>
+        </div>
+    </div>
+ <div class="container-fluid" id="section8" >
+     <h2 style="text-align: center;">Contact Us</h2>
+     <div class="container" id="sec8">
+         <div class="address">
+         <div class="ad">
+    <h5>Address</h5>
+    </div>
+    <div class="loc">
+        <p>Street 221B Baker Sreet, London, UK.</p>
+    </div>
+     </div>
+    
+     <div class="cust">
+<div class="ct">
+    <h5>Customer-Support</h5>
+</div>
+
+<div class="detail">
+  E-MAIL:  <br>
+  [email protected]<br>
+  phone:[555]555-55555
+</div>
+    </div>
+    <div class="links">
+       <p style="text-align: center;"> <a href="#" class="fa fa-facebook" id="fa4" style="color: black;" ></a>
+        <a href="#" class="fa fa-twitter" id="fa4" style="color: black;"></a>
+        <a href="#" class="fa fa-linkedin" id="fa4" style="color:black"></a></p>
+    
+    </div>    
+    
+</div>
+<div class="container" id="sec9">
+    <form>
+        <div class="fname">
+    <div class="name">
+        <label for="name">Your name[required]</label><br>
+      <input type="text" name="name" id="name" maxlength="30" required>
+    </div>
+    <div class="email">
+        <label for ="email"> Your email [required]</label><br>
+<input type="email" name="email" id="email">
+</div>
+<div class="Subject">
+    <label for="sub">Subject</label><br>
+    <input type="text" name="sub" maxlength="30" id="sub" required>
+
+</div>
+</div>
+<div class="msg">
+    Your message:<br><textarea id="textarea" name="textarea" rows="7" cols="140"></textarea>
+</div>
+<div class="b">
+<p style="text-align: right;"><button type="submit" style="background-color: yellow;">
+send
+</button></p>
+</div>
+</form>
+</div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="container" id="sec10">
+            <div class="pro">
+            <h4>PRODUCT</h4>
+    > Our work<br>
+    > Club<br>
+    > News<br>
+    > Announcement
+    </div>
+    <div class="info">
+        <h4>INFORMATION</h4>
+        > Pricing<br>
+        > Terms<br>
+        > Affiliates<br>
+        > Blog
+        </div>
+<div class="supp">
+    <h4>SUPPORT</h4>
+    > Documentaion<br>
+    > FAQS<br>
+    > Forums <br>
+    > Contact
+</div>
+    </div>
+ 
+</footer>
+
+ </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>  
